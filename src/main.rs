@@ -29,6 +29,8 @@ fn main() -> Result<()> {
             report::write_schedule(&output, &schedule)?;
 
             println!("Wrote schedule to {}", output);
+
+            report::print_summary(&schedule);
         }
     }
 
